@@ -5,9 +5,9 @@ part 'item_model.g.dart';
 @JsonSerializable(explicitToJson: true)
 class ItemModel {
   @JsonKey(name: 'albumId')
-  final String? albumId;
+  final int? albumId;
   @JsonKey(name: 'id')
-  final String? id;
+  final int? id;
   @JsonKey(name: 'title')
   final String? title;
   @JsonKey(name: 'url')

@@ -7,8 +7,8 @@ part of 'item_model.dart';
 // **************************************************************************
 
 ItemModel _$ItemModelFromJson(Map<String, dynamic> json) => ItemModel(
-      json['albumId'] as String?,
-      json['id'] as String?,
+      json['albumId'] as int?,
+      json['id'] as int?,
       json['title'] as String?,
       json['url'] as String?,
       json['thumbnailUrl'] as String?,
