@@ -32,7 +32,6 @@ class HomeViewModel extends ChangeNotifier {
     errorMessage = '';
     loading = true;
     notifyListeners();
-    await Future.delayed(const Duration(seconds: 2));
     _homeRepository.getItems().then((value) {
       totalItems = value;
       listItemCount = 10;
