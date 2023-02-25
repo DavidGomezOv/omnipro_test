@@ -10,7 +10,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ViewModelBuilder<HomeViewModel>.reactive(
-      viewModelBuilder: () => HomeViewModel(context),
+      viewModelBuilder: () => HomeViewModel(),
       builder: (context, viewModel, child) => BaseScreen(
         needsReloadWidget: true,
         reloadFunction: () async {

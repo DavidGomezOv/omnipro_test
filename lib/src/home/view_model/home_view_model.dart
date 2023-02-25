@@ -15,9 +15,7 @@ class HomeViewModel extends ChangeNotifier {
   bool loading = false;
   String errorMessage = '';
 
-  BuildContext context;
-
-  HomeViewModel(this.context) {
+  HomeViewModel() {
     getItems();
     scrollController.addListener(pagination);
   }

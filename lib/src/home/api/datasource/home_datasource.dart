@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:injectable/injectable.dart';
 import 'package:omnipro_test/src/core/base/base_datasource.dart';
+import 'package:omnipro_test/src/core/constants/constants.dart';
 import 'package:omnipro_test/src/home/model/item_model.dart';
 
 @lazySingleton
@@ -25,7 +26,7 @@ class HomeDataSource extends BaseDatasource {
       }
       return items;
     } else {
-      throw ('status code ${response.statusCode}');
+      throw ('${Messages.statusCodeMessage}: ${response.statusCode}');
     }
   }
 }
