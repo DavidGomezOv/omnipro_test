@@ -4,7 +4,7 @@ A Flutter project with MVVM architecture, Provider, Dependency injection and Uni
 
 ## Getting Started
 
-Run this commands in order before execute the application
+Clone this project and then run this commands in order before execute the application
 
 - flutter pub clean
 - flutter pub get
